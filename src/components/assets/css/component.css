@@ -39,6 +39,7 @@
     box-shadow: 15px 15px 8px #02220b;
     animation: shake 1.5s;
     animation-iteration-count: initial;
+    font-weight:500;
 }
 
 
