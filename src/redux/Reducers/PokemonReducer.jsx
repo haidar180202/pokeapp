@@ -9,7 +9,7 @@ const initialState = {
       switch (action.type) {
         case ActionTypes.ALL_POKEMON:
           const pokemon = action.payload
-        
+          console.log(state.pokemon);
         return {
          ...state , pokemon
         }        
