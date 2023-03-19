@@ -31,82 +31,106 @@
   }
 
 /* Card  */
-.pokemon-card {
+.PokemonCard .bayangan {
+    box-shadow: 15px 15px 8px #10461e;
+    
+}
+.PokemonCard .bayangan:hover{
+    box-shadow: 15px 15px 8px #02220b;
+    animation: shake 1.5s;
+    animation-iteration-count: initial;
+}
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-3deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  .PokemonCard .pokemon-card {
     background-color: #fff;
     padding: 16px;
     text-align: center;
     
   }
   
-  .normal {
+  .PokemonCard .normal {
     background-color: #a8a878;
   }
   
-  .fire {
+  .PokemonCard .fire {
     background-color: #f08030;
   }
   
-  .water {
+  .PokemonCard .water {
     background-color: #6890f0;
   }
   
-  .electric {
+  .PokemonCard .electric {
     background-color: #f8d030;
   }
   
-  .grass {
+  .PokemonCard .grass {
     background-color: #78c850;
   }
   
-  .ice {
+  .PokemonCard .ice {
     background-color: #98d8d8;
   }
   
-  .fighting {
+  .PokemonCard .fighting {
     background-color: #c03028;
   }
   
-  .poison {
+  .PokemonCard .poison {
     background-color: #a040a0;
   }
   
-  .ground {
+  .PokemonCard .ground {
     background-color: #e0c068;
   }
   
-  .flying {
+  .PokemonCard .flying {
     background-color: #a890f0;
   }
   
-  .psychic {
+  .PokemonCard .psychic {
     background-color: #f85888;
   }
   
-  .bug {
+  .PokemonCard .bug {
     background-color: #a8b820;
   }
   
-  .rock {
+  .PokemonCard .rock {
     background-color: #b8a038;
   }
   
-  .ghost {
+  .PokemonCard .ghost {
     background-color: #705898;
   }
   
-  .dragon {
+  .PokemonCard .dragon {
     background-color: #7038f8;
   }
   
-  .dark {
+  .PokemonCard .dark {
     background-color: #705848;
   }
   
-  .steel {
+  .PokemonCard .steel {
     background-color: #b8b8d0;
   }
   
-  .fairy {
+  .PokemonCard .fairy {
     background-color: #ee99ac;
   }
   
