@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import PokemonCard from "../components/PokemonCard ";
 import { Allpokemons } from "../redux/actions/PokemonAction";
 
 
@@ -74,17 +75,7 @@ const AllPokemon = (props) => {
               // dispatch(Allpokemons(x));
               // console.log(x)
               return (
-                
-                <div className="col-lg-3" key={x.id}>
-                  <Link to={`/allpokemon/${x.id}`} className="card my-3" >
-                    <div className="m-3 d-flex text-center justify-content-center">
-                      <div>
-                        <img src={x.data.sprites.front_default} alt={x.name} />
-                        <p>{x.name}</p>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
+                <PokemonCard x={x} />
               );
 
               

@@ -8,11 +8,15 @@ function DetailPokemon() {
   const allpokemonn = useSelector((state) => state);
 
   // get api data request if data not exist
+  // const pokemonId = async() =>{
+  //   const get
+  // }
+  // pokemonId();
 
   return (
     <>
       {/* {allpokemonn.pokemon[]} */}
-      {allpokemonn.pokemon !== undefined || allpokemonn.pokemon == ""
+      {allpokemonn.pokemon !== undefined || allpokemonn.pokemon == "" 
         ? allpokemonn.pokemon[id - 1] !== undefined
           ? allpokemonn.pokemon[id - 1].id == id
             ? allpokemonn.pokemon[id - 1].name
