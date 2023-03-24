@@ -56,82 +56,82 @@
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
-  .PokemonCard .pokemon-card {
+   .pokemon-card {
     background-color: #fff;
     padding: 16px;
     text-align: center;
     
   }
   
-  .PokemonCard .normal {
+   .normal {
     background-color: #a8a878;
   }
   
-  .PokemonCard .fire {
+   .fire {
     background-color: #f08030;
   }
   
-  .PokemonCard .water {
+   .water {
     background-color: #6890f0;
   }
   
-  .PokemonCard .electric {
+   .electric {
     background-color: #f8d030;
   }
   
-  .PokemonCard .grass {
+   .grass {
     background-color: #78c850;
   }
   
-  .PokemonCard .ice {
+   .ice {
     background-color: #98d8d8;
   }
   
-  .PokemonCard .fighting {
+   .fighting {
     background-color: #c03028;
   }
   
-  .PokemonCard .poison {
+   .poison {
     background-color: #a040a0;
   }
   
-  .PokemonCard .ground {
+   .ground {
     background-color: #e0c068;
   }
   
-  .PokemonCard .flying {
+   .flying {
     background-color: #a890f0;
   }
   
-  .PokemonCard .psychic {
+   .psychic {
     background-color: #f85888;
   }
   
-  .PokemonCard .bug {
+   .bug {
     background-color: #a8b820;
   }
   
-  .PokemonCard .rock {
+   .rock {
     background-color: #b8a038;
   }
   
-  .PokemonCard .ghost {
+   .ghost {
     background-color: #705898;
   }
   
-  .PokemonCard .dragon {
+   .dragon {
     background-color: #7038f8;
   }
   
-  .PokemonCard .dark {
+   .dark {
     background-color: #705848;
   }
   
-  .PokemonCard .steel {
+   .steel {
     background-color: #b8b8d0;
   }
   
-  .PokemonCard .fairy {
+   .fairy {
     background-color: #ee99ac;
   }
   
