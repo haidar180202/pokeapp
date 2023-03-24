@@ -36,9 +36,9 @@ function DetailPokemon() {
         allpokemonn.pokemon[id - 1] !== undefined ? (
           allpokemonn.pokemon[id - 1].id == id ? (
             <div className="container ">
-              <div className="row">
+              
                 <CardDetail datapokemon={allpokemonn.pokemon[id - 1]} />
-              </div>
+              
             </div>
           ) : (
             "Id Pokemon Is Not Found"
@@ -47,9 +47,9 @@ function DetailPokemon() {
           "Loading"
         ) : (
           <div className="container ">
-            <div className="row">
+            
               <CardDetail datapokemon={pokeId} />
-            </div>
+            
           </div>
         )
       ) : (
