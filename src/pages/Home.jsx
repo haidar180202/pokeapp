@@ -5,9 +5,9 @@ import Navbar from '../components/Navbar'
 
 function Home() {
   return (
-    <div className='p-3'>
+    
     <Carousel/>
-    </div>
+    
   )
 }
 

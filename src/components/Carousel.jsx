@@ -17,8 +17,8 @@ function Carousel() {
   }
 
   return (
-    <div className="Carousel row m-0">
-      <div className=" min-vh-100 py-5">
+    <div className="Carousel row m-0 p-0">
+      <div className="py-5" style={{minHeight:'595px'}}>
         <div className="row mt-5">
           <div className="col-lg-4 col-md-12  ">
 

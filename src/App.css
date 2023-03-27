@@ -3,7 +3,7 @@
   background-image: url('./components/assets/gambar/backgroundlatar.jpg');
   background-size: cover;
   background-position: center;
-  min-height: 700px;
+  height: auto;
   
 }
 

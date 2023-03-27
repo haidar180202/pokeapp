@@ -30,15 +30,13 @@ function DetailPokemon() {
   // console.log(pokeId.name);
 
   return (
-    <>
+    <div style={{minHeight:"595px"}}>
       {/* {allpokemonn.pokemon[]} */}
       {allpokemonn.pokemon !== undefined || allpokemonn.pokemon == "" ? (
         allpokemonn.pokemon[id - 1] !== undefined ? (
           allpokemonn.pokemon[id - 1].id == id ? (
             <div className="container ">
-              
                 <CardDetail datapokemon={allpokemonn.pokemon[id - 1]} />
-              
             </div>
           ) : (
             "Id Pokemon Is Not Found"
@@ -55,7 +53,7 @@ function DetailPokemon() {
       ) : (
         "Loading..."
       )}
-    </>
+    </div>
   );
 }
 

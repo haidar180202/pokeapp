@@ -4,11 +4,12 @@
 }
 
 /* carousel */
-.Carousel .my-component {
+/* .Carousel .my-component {
     background-image: url('../gambar/backgroundlatar.jpg');
     background-size: cover;
     background-position: center;
-}
+    
+} */
 
 .Carousel .logopokemon:hover{
     border-radius: 50px;
