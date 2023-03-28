@@ -8,8 +8,8 @@ const CardDetail = (props) => {
       <div className="col-lg-12 bayangan card  p-0 my-4">
         <div className={`text-decoration-none pokemon-card ${props.datapokemon.data.types[0].type.name}`} >
           <div className={`row`}>
-            <div className="col-lg-5 my-5" >
-              <img src={props.datapokemon.data.sprites.front_default}  alt="Image" style={{ width: "350px", height: "350px", objectFit: "cover" }}/>
+            <div className="col-lg-5 mb-5" >
+              <img src={props.datapokemon.data.sprites.other.home.front_default}  alt="Image" style={{ width: "auto", height: "380px", objectFit: "cover" }}/>
             </div>
 
             <div className="col-lg-7">

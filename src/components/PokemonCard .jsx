@@ -13,7 +13,7 @@ const PokemonCard = ({ x }) => {
         >
           <div className="m-3 d-flex text-center justify-content-center">
             <div>
-              <img src={x.data.sprites.front_default} alt={x.name} />
+              <img src={x.data.sprites.other.home.front_default} alt={x.name} height={140}/>
               <p className="text-white">{x.name}</p>
             </div>
           </div>
