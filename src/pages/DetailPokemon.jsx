@@ -15,7 +15,7 @@ function DetailPokemon() {
   const pokemonId = async () => {
     try {
       const data = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
-      setPokeId(data.data);
+      setPokeId(data);
     } catch (error) {
       console.log(error.message);
     }
@@ -34,7 +34,7 @@ function DetailPokemon() {
       {/* {allpokemonn.pokemon[]} */}
       {allpokemonn.pokemon !== undefined || allpokemonn.pokemon == "" ? (
         allpokemonn.pokemon[id - 1] !== undefined ? (
-          allpokemonn.pokemon[id - 1].id == id ? (
+          allpokemonn.pokemon[id - 1].id == id  ? (
             <div className="container ">
                 <CardDetail datapokemon={allpokemonn.pokemon[id - 1]} />
             </div>
@@ -45,9 +45,7 @@ function DetailPokemon() {
           "Loading"
         ) : (
           <div className="container ">
-            
-              <CardDetail datapokemon={pokeId} />
-            
+            <CardDetail datapokemon={pokeId} />
           </div>
         )
       ) : (
