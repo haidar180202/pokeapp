@@ -1,6 +1,6 @@
 import React from "react";
 import "./assets/css/component.css";
-
+import logoutama from "./assets/gambar/logoutama.png";
 const CardDetail = (props) => {
   // ["generation-viii"].icons.front_default
   // props.datapokemon.data.types[0].type.name
@@ -103,54 +103,74 @@ const CardDetail = (props) => {
                       </div>
                     ) : (
                       // get data redux
-                      <div
-                        className={`text-decoration-none pokemon-card ${props.datapokemon.data.types[0].type.name}`}
-                      >
-                        <table className="row px-3 ">
-                          <tr className="col-lg-4">
-                            <div className="card bayangan my-3 text-white bg-danger">
-                              <td style={{ borderRadius: 120 }}>
-                                <img
-                                  src={
-                                    props.datapokemon.data.sprites.versions[
-                                      "generation-viii"
-                                    ].icons.front_default
-                                  }
-                                  alt="images"
-                                  style={{ height: 95, width: 155 }}
-                                />
-                              </td>
-                              <td style={{ fontSize: 19, marginTop: 10 }}>
-                                {" "}
-                                {props.datapokemon.name}
-                              </td>
-                              <td style={{ fontSize: 19 }}> haidarrrrr</td>
-                            </div>
-                          </tr>
-                          
-                          <tr className="col-lg-8">
-                            <div className="card bayangan my-3">
-                              <td style={{ borderRadius: 120 }}>
-                                <img
-                                  src={
-                                    props.datapokemon.data.sprites.versions[
-                                      "generation-viii"
-                                    ].icons.front_default
-                                  }
-                                  alt="images"
-                                  style={{ height: 95, width: 155 }}
-                                />
-                              </td>
-                              <td style={{ fontSize: 19, marginTop: 10 }}>
-                                {" "}
-                                {props.datapokemon.name}
-                              </td>
-                              <td style={{ fontSize: 19 }}> haidarrrrr</td>
-                            </div>
-                          </tr>
-                          
-                        </table>
-                      </div>
+
+                      <table className="row px-3 ">
+                        <tr className="col-md-4">
+                          <div
+                            className={`row mx-2 my-2  ${
+                              props.datapokemon.data.types[1] === undefined ||
+                              props.datapokemon.data.types[1] === ""
+                                ? `${props.datapokemon.data.types[0].type.name} `
+                                : props.datapokemon.data.types[1].type.name
+                            }`} style={{borderRadius:60,boxShadow: "2px 3px 10px 5px #10461e"}}
+                          >
+                            <td style={{ borderRadius: 120 }}>
+                              <img
+                                src={
+                                  props.datapokemon.data.sprites.versions[
+                                    "generation-viii"
+                                  ].icons.front_default
+                                }
+                                alt="images"
+                                style={{ height: 95, width: 155 }}
+                              />
+                            </td>
+                            <td className="mb-3 text-white" style={{ fontSize: 19 }}>
+                              {" "}
+                              {props.datapokemon.name.charAt(0).toUpperCase() + props.datapokemon.name.slice(1)}
+                            </td>
+                          </div>
+                        </tr>
+
+                        <tr className="col-md-8">
+                          <div
+                            className={`row my-2 mx-2 text-white ${
+                              props.datapokemon.data.types[1] === undefined ||
+                              props.datapokemon.data.types[1] === ""
+                                ? `${props.datapokemon.data.types[0].type.name} `
+                                : props.datapokemon.data.types[1].type.name
+                            }`} style={{borderRadius:50,boxShadow: "2px 3px 7px 4px #10461e"}}
+                          >
+                            {/* <td style={{ borderRadius: 120 }}>
+                              <img
+                                src={
+                                  props.datapokemon.data.sprites.versions[
+                                    "generation-viii"
+                                  ].icons.front_default
+                                }
+                                alt="images"
+                                style={{ height: 95, width: 155 }}
+                              />
+                            </td> */}
+                            <th className="mb-3" style={{ fontSize: 16 }}>
+                              {" "}
+                              Pokemon name: {props.datapokemon.name.charAt(0).toUpperCase() + props.datapokemon.name.slice(1)}
+                            </th>
+                            <td  style={{ fontSize: 15 }}>
+                              Type Pokemon : {props.datapokemon.data.types.map((x)=>{
+                                return (
+                                  <b className="mx-1"><img src={logoutama} height="20" alt="logo" className="mx-1"/>{x.type.name}</b>
+                                )
+                              })}
+                            </td>
+                            <td  style={{ fontSize: 15 }} className="my-3">
+                              Height Pokemon : {}
+                            </td>
+                          </div>
+                        </tr>
+
+                        
+                      </table>
 
                       // <div className="row">
                       //   <div className="col-lg-12 ">
