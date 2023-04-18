@@ -4,26 +4,25 @@ import backgr from "./assets/gambar/backgroundlatar.jpg";
 import pokemonhover from "./assets/gambar/pokemonhover.png";
 import poke1 from "./assets/gambar/pokemon1.png";
 import "./assets/css/component.css";
-import pokeaudio from './assets/audio/pikachuaudio.mp3'
+import pokeaudio from "./assets/audio/pikachuaudio.mp3";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import Images from "./Images";
 function Carousel() {
   const [isHovered, setIsHovered] = useState(false);
   const [audio] = useState(new Audio(pokeaudio));
 
-
-  const hoverpoke = () =>{
+  const hoverpoke = () => {
     setIsHovered(true);
     audio.play();
-  }
+  };
 
   return (
     <div className="Carousel row m-0 p-0">
-      <div className="py-5" style={{minHeight:'595px'}}>
+      <div className="py-5" style={{ minHeight: "595px" }}>
         <div className="row mt-5">
           <div className="col-lg-4 col-md-12  ">
-
             <Link to="/" className=" d-flex justify-content-center">
-            <img
+              <img
                 src={isHovered ? pokemonhover :  poke1 }
                 alt="gambar"
                 height={'auto'}
