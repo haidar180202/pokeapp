@@ -17,15 +17,22 @@ function App() {
   const [allPokemon, setAllPokemon] = useState([]);
   const [loading, setLoading] = useState(false);
   const [count, setCount] = useState(20);
+  const [pre, setPre] = useState(0);
+  const [next, setNext] = useState(0);
+  // const [api, setApi] = useState("https://pokeapi.co/api/v2/pokemon?offset=0limit=8");
+
   const [jumlah, setJumlah] = useState(0);
   
   const dispatch = useDispatch();
   
   useEffect(() => {
     const fetchPokemon = async () => {
+
       try {
         const respon = await axios.get(
           `https://pokeapi.co/api/v2/pokemon?limit=${count}`
+          
+          // api
         );
 
         setJumlah(respon.data.count);

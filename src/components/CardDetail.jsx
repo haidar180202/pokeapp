@@ -1,7 +1,9 @@
 import React from "react";
 import "./assets/css/component.css";
+// gambar logo type
 import logoutama from "./assets/gambar/logoutama.png";
 import Images from "./Images";
+import TypesPoke from "./TypesPoke";
 const CardDetail = (props) => {
   // ["generation-viii"].icons.front_default
   // props.datapokemon.data.types[0].type.name
@@ -155,12 +157,7 @@ const CardDetail = (props) => {
                               {props.datapokemon.data.types.map((x) => {
                                 return (
                                   <b className="mx-1">
-                                    <img
-                                      src={logoutama}
-                                      height="20"
-                                      alt="logo"
-                                      className="mx-1"
-                                    />
+                                    <TypesPoke name={x.type.name}/>
                                     {x.type.name}
                                   </b>
                                 );
