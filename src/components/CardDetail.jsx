@@ -16,7 +16,7 @@ const CardDetail = (props) => {
           <div
             className={`text-decoration-none pokemon-card ${props.datapokemon.data.types[0].type.name}`}
           >
-            <div className={`row`}>
+            <div className={`d-flex justify-content-center row`}>
               <div className="col-lg-5 mb-5">
                 {props.datapokemon.data === undefined ? (
                   "loading..."
@@ -39,7 +39,7 @@ const CardDetail = (props) => {
               </div>
               {/* pokemon/versions/generation-viii/icons/ */}
               <div className="col-lg-7">
-                <div className=" row ">
+                <div className="">
                   {props.datapokemon !== undefined ? (
                     props.datapokemon.name === undefined ||
                     props.datapokemon.name === "" ? (
