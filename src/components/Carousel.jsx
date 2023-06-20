@@ -17,7 +17,7 @@ function Carousel() {
   };
 
   return (
-    <div className="Carousel row m-0 p-0">
+    <section className="Carousel row m-0 p-0">
       <div className="py-5" style={{ minHeight: "595px" }}>
         <div className="row mt-5">
           <div className="col-lg-4 col-md-12  ">
@@ -38,8 +38,8 @@ function Carousel() {
             <h5 className="card-title mt-5 text-white my-2">
               <b>W E L C O M E</b>
               <b className="mx-3 my-2">T O</b>
-              <b>P O K E M O N</b>
-              <b className="mx-3 my-2">A P P</b>
+              <b>P O K E</b>
+              <b className="mx-2 my-2">A P P</b>
             </h5>
             <p class="card-text text-warning my-4">
               <b className=" text-center">
@@ -71,7 +71,7 @@ function Carousel() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
